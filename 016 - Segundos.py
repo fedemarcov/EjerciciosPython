@@ -17,7 +17,8 @@ segundos_restantes = segundos % 60 # segundos restantes
 
 Las // significan DIVISION ENTERA, el resultado no tendra decimales.
 """
-segundos = int(input("Ingrese la cantidad de segundos: "))
+
+segundos = (int(input("Ingrese la cantidad de segundos: ")))
 
 dias = segundos // 86400 # 86400 segundos = 1 día
 
@@ -27,6 +28,10 @@ minutos = (segundos % 3600) // 60 # 60 segundos = 1 minuto
 
 segundos_restantes = segundos % 60 # segundos restantes
 
-print(f"{segundos} equivalen a {dias} dias, {horas} horas, {minutos} minutos y {segundos_restantes} segundos.")
+
+print(f"{segundos} segundos equivalen a {dias} dias, {horas} horas, {minutos} minutos y {segundos_restantes} segundos.")
+print(f"{dias:02}:{horas:02}:{minutos:02}:{segundos_restantes:02}")
+
 # Lo anterior es una forma de simplificar lo siguiente:
 # print(segundos, "equivalen a", dias, "dias,", horas, "horas,", minutos, "minutos y", segundos_restantes, "segundos.")
+

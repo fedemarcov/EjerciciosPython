@@ -39,20 +39,21 @@ las condiciones sean verdaderas para que la expresión sea verdadera.
 
 """
 
-EDAD_MINIMA_PARA_ENTRAR = 10
-ESTATURA_MINIMA_PARA_ENTRAR = 1.6
+EDAD_MINIMA_INGRESO = 10
+ALTURA_MINIMA_INGRESO = 1.60
 
-edad = int(input("Edad: "))
-estatura = float(input("Estatura: "))
+edad = int(input("Ingrese su edad: "))
+altura = float(input("Ingrese su altura: "))
 
-entra_por_edad = edad >= EDAD_MINIMA_PARA_ENTRAR
-entra_por_estatura = estatura >= ESTATURA_MINIMA_PARA_ENTRAR
-entra = entra_por_edad and entra_por_estatura
+entra_por_edad = edad >= EDAD_MINIMA_INGRESO
+entra_por_altura = altura >= ALTURA_MINIMA_INGRESO
+entra = entra_por_edad and entra_por_altura
+
 
 if entra:
-    print("¡Puede acceder!")
+    print("¡Puede acceder a la atraccion!")
 else:
     if not entra_por_edad:
         print("Lo siento, eres demasiado joven para acceder.")
-    if not entra_por_estatura:
+    if not entra_por_altura:
         print("Lo siento, eres demasiado bajo para acceder.")

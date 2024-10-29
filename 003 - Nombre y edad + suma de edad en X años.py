@@ -4,9 +4,9 @@
 #la cantidad de años ingresada. El mensaje debe tener el siguiente formato:
 #'Hola, [nombre]. Dentro de [cantidad] años tendrás [edad + cantidad] años'".
 
+
 nombre = input("Ingrese su nombre: ")
 edad = int(input("Ingrese su edad: "))
-edadsumada = int(input("Ingrese cuantos años quiere sumar: "))
-suma = edad + edadsumada
+cantidad = int(input("Ingrese cuantos años quiere sumar: "))
 
-print("Hola", nombre, ", dentro de", edadsumada, "años, tendras", suma, "años")
+print(f"Hola {nombre}. Dentro de {cantidad} de años tendrás {edad + cantidad} años.")

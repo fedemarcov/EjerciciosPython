@@ -2,6 +2,6 @@
 #pantalla un mensaje que diga "Hola, [nombre]. Tu edad es [edad] años."
 
 nombre = input("Ingrese su nombre: ")
-edad = int (input("Ingrese su edad: "))
+edad = int(input("Ingrese su edad: "))
 
-print("Hola,", nombre,"tu edad es", edad, "años" )
+print(f"Hola {nombre}. Tu edad es {edad}.")

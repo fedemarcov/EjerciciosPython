@@ -21,13 +21,15 @@
 #a = a - b;
 #print(a,b)
 
+
 num1 = int(input("Numero 1: "))
 num2 = int(input("Numero 2: "))
 
-print (num1,num2)
+print(num1, "<===>", num2)
 
-aux = num1
-num1 = num2
-num2 = aux
+num1 = num1+num2
+num2 = num1-num2
+num1 = num1-num2
 
-print (num1,num2)
+print(num1, "<===>", num2)
+
