@@ -24,17 +24,20 @@ El conector "or" se utiliza para crear expresiones lógicas que requieren que al
 sea verdadera para ser verdadera.
 """
 
-EDAD_MINIMA_PARA_ENTRAR = 6
-ESTATURA_MINIMA_PARA_ENTRAR = 1.5
+EDAD_MINIMA_ENTRAR = 6
+ESTATURA_MINIMA_ENTRAR = 1.51
 
 edad = int(input("Edad: "))
-estatura = float(input("Estatura:"))
+estatura = float(input("Estatura: "))
 
-entra_por_edad = edad >= EDAD_MINIMA_PARA_ENTRAR
-entra_por_estatura = estatura >= ESTATURA_MINIMA_PARA_ENTRAR
-entra = entra_por_edad or entra_por_estatura
+entra_por_edad = edad >= EDAD_MINIMA_ENTRAR
+entra_por_estatura = estatura >= ESTATURA_MINIMA_ENTRAR
+entra = entra_por_edad and entra_por_estatura
 
 if entra:
     print("¡Puede acceder!")
-if not entra:
-    print("Lo siento, no puede acceder.")
+else:
+    if not entra_por_edad:
+        print("No puede acceder por ser demasiado joven.")
+    if not entra_por_estatura:
+        print("No puede acceder por ser demasiado bajo.")

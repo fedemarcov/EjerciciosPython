@@ -15,13 +15,13 @@ Si el número es impar, mostrar un mensaje indicando que es impar.
 
 numero = int(input("Numero: "))
 
-is_par = (numero % 2) == 0
-print("El numero: ", numero, "es par?",is_par)
-
-#Esto tambien se puede poner asi
-
 if (numero % 2) == 0:
     print("Es par")
 else:
     print("No es par)")
-    
+
+
+#Esto tambien se puede poner asi
+
+# is_par = (numero % 2) == 0
+# print("El numero: ", numero, "es par?",is_par)
