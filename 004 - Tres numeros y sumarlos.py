@@ -7,4 +7,4 @@ n3 = int(input("Numero 3: "))
 
 suma = n1 + n2 + n3
 
-print(f"{n1}+{n2}+{n3}= {suma}")
+print(f"{n1} + {n2} + {n3} = {suma}")
